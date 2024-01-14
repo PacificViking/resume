@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <style>
+            html, body, #maingrid {
+                padding: 0px;
+                border: 0px;
+                margin: 0px;
+            }
+            body {
+                font-family: Cabin, 'Gill Sans MT', sans-serif;
+                letter-spacing: 0.4px;
+                line-height: 1.15;
+            }
+            #maingrid {
+                display: grid;
+                grid-template-columns: 1fr 2fr;
+            }
+            #left {
+                grid-row: 1;
+                grid-column: 1;
+                background-color: #888888;
+                color: white;
+                margin-right: 10px;
+            }
+            #left > * {
+                padding-left: 16px;
+            }
+            #left > h1 {
+                margin: 10px 0px 10px 0px;
+                line-height: 45px;
+            }
+            #left > h2 {
+                margin: 10px 0px 10px 0px;
+                background-color: #555555;
+                padding-top: 3px;
+                padding-bottom: 3px;
+            }
+
+            .infobox {
+                display: flex;
+                flex-direction: column;
+                margin: 20px 0px 20px 0px;
+            }
+            .infobox a {
+                text-decoration-style: underline;
+                color: white;
+            }
+            .infobox question {
+                font-weight: bold;
+            }
+            #left ul {
+                list-style-position: inside;
+                line-height: 25px;
+            }
+            #left ul.sanitize {
+                list-style-type: none;
+                padding-right: 10px;
+            }
+            #left ul.sanitize li{
+                margin-bottom: 20px;
+            }
+
+
+
+
+            #right {
+                grid-row: 1;
+                grid-column: 2;
+                padding: 10px;
+                padding-right: 20px;
+            }
+            #right > p {
+                line-height: 1.3;
+            }
+            #right > h2 {
+                color: gray;
+                padding: 5px;
+                padding-left: 0px;
+                border: 1.5px gray solid;
+                border-left: none;
+                border-right: none;
+                margin: 16px 0px 10px 0px;
+            }
+            #right > h3 {
+                margin-right: 0 !important;
+                margin-left: auto !important;
+                width: 95%;
+            }
+            #right h3 {
+                margin: 5px 0px 5px 0px;
+            }
+            #right h4 {
+                margin: 15px 0px 5px 0px; 
+            }
+            .rightsection {
+                margin-right: 0;
+                margin-left: auto;
+                width: 86%;
+                margin-bottom: 25px;
+            }
+            .rightsection > p {
+                font-style: italic;
+                font-size: 18px;
+                margin-top: 10px;
+            }
+            .left {
+                display: block;
+                float: left;
+                width: 80px;
+            }
+            .rightsection ul {
+                margin: 0px;
+                padding-left: 14px;
+                list-style-position: outside;
+            }
+            .rightsection ul li {
+                line-height: 1.3;  /* it says 1.15 but it looks more like 1.3*/
+            }
+
+            footer {
+                margin: 0px auto;
+                font-size: 14px;
+                text-align: center;
+                color: #dddddd;
+                background-color: #222222;
+            }
+            footer a {
+                color: #dddddd;
+                text-decoration-style: underlined;
+            }
+            footer p {
+                padding: 10px 0px 10px 0px;
+                margin: 0px auto;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="maingrid">
+            <div id="left">
+                <h1>Jiuzhou<br>Hao</h1>
+                <h2>Personal Info</h2>
+                <div class="infobox">
+                    <question>Email</question>
+                    <answer>johnhaoallwood@gmail.com</answer>
+                </div>
+                <div class="infobox">
+                    <question>Phone</question>
+                    <answer>+1 647-613-9983</answer>
+                </div>
+                <div class="infobox">
+                    <question>Github</question>
+                    <answer><a href="https://github.com/PacificViking">https://github.com/PacificViking</a></answer>
+                </div>
+
+                <h2>Education</h2>
+                <ul class="sanitize">  <!--being put into a list for stylistic consistency-->
+                    <li>Pursuing undergraduate studies in Computer Engineering at the University of Toronto, St George Campus. Expected to graduate 2027.</li>
+                </ul>
+                
+                <h2>Skills</h2>
+                <ul class="sanitize">
+                    <li>Webpage/Software/Competitive Programming - experience with many hobby projects</li>
+                    <li>System Administration - hosts proxy and self-made chat server, familiar with Linux and the SQL language</li>
+                    <li>Problem Solver - strong problem finding / debugging skills, enjoys automating mundane tasks rather than performing them</li>
+                    <li>Safety Mindset - sanitizes inputs and control flows for every project</li>
+                    <li>Non-Dependent - capable of finding and using information available to me using technology</li>
+                    <li>Technologically Adept - frequently uses tools such as Photoshop, Blender, and Stable Diffusion</li>
+                </ul>
+                <h2>Languages</h2>
+                <ul class="sanitize">
+                    <li>Fluent in English and Chinese</li>
+                </ul>
+                <h2>Hobbies</h2>
+                <ul>
+                    <li>Programming</li>
+                    <li>Philosophy and economics</li>
+                    <li>Cutting edge open source</li>
+                    <li>Technology</li>
+                </ul>
+                <h2>Misc. Participation</h2>
+                <ul>
+                    <li>Certificate Cutoff: Canadian Computing Competition, Senior</li>
+                    <li>Certificate Cutoff: Waterloo CEMC Euclid Competition</li>
+                    <li>Advent of Code 2021-2023</li>
+                    <li>Hack the Valley 8</li>
+                </ul>
+            </div>
+
+
+            <div id="right">
+                <p>Hello, I am Jiuzhou Hao, a programmer and tech enthusiast pursuing undergraduate studies for Computer Engineering. I look forwards to solving both bugs and real-life problems.</p>
+
+                <h2>Projects</h2>
+                <h3>A personal censorship circumvention proxy</h3>
+                <div class="rightsection">
+                    <h4>Challenges</h4>
+                    <ul>
+                        <li>Creative idea generation inspired by academic research on firewall mechanisms and alternate circumvention proxies (shadowsocks)</li>
+                        <li>Reading and implementing network protocols to maintain package header integrity thus ensuring delivery</li>
+                        <li>Optimizing proxy throughput by interfacing with low level systems and multi-level caching</li>
+                        <li>Remote server administration using AWS: ssh, neovim, linux firewalls, configuration files</li>
+                    </ul>
+                    <h4>Achievements</h4>
+                    <ul>
+                        <li>Relatively fast (1.6MB/s), stable network traffic from China to firewalled domains/addresses compared to other proxies (which require avid disconnection to avoid suspicion flagging)</li>
+                        <li>Consistently used by me and family for over a year.</li>
+                    </ul>
+                </div>
+                <h3>Multi-peer airdrop-like file transfer</h3>
+                <div class="rightsection">
+                    <h4>Challenges</h4>
+                    <ul>
+                        <li>Communication between MacOS "Airdrop" API (in Swift) and Python (my language of choice). Solved by base64 command line interface.</li>
+                        <li>"Airdrop" API documented poorly: lack of relevant information (example code had to be translated from Objective-C)</li>
+                        <li>Major UI/UX considerations: application-like feel despite being an webapp, portability/distribution under MacOS security</li>
+                        <li>Multipeer asynchronous communication: syncing peer information after disconnection, nonblocking file IO, abstracted communication protocols with peers and API command line interface</li>
+                    </ul>
+                    <h4>Achievements</h4>
+                    <ul>
+                        <li>Was not widely adopted, but was seldom used in my classes</li>
+                    </ul>
+                </div>
+
+
+                <h2>Volunteer History</h2>
+                <div class="left">2020-11 - 2021-03; <br><br> 2021-11 - 2022-03</div>
+                <div class="rightsection">
+                    <h3>Head of Sounds and Lights</h3>
+                    <p>We Will Rock You (Musical) / FAME (Musical)</p>
+                    <h4>Key Qualifications and Responsibilities</h4>
+                    <ul>
+                        <li>Learning stage light positioning and control using manual</li>
+                        <li>Organizing microphone distribution to actors</li>
+                        <li>Working with music and stage director to understand needs</li>
+                    </ul>
+                    <h4>Key Achievements</h4>
+                    <ul>
+                        <li>Modified stage lights at calculated angles for full, omnidirectional lighting for the musical</li>
+                        <li>Multiple creative ideas, including using TTS for a robotic announcer, making dark blue scenes more visible using specks of bright light</li>
+                        <li>Found and used undiscovered features in the control panel, including fixture groups, automatic shapes, and keyframing</li>
+                    </ul>
+                </div>
+                <div class="left">2019-11 - 2023-03</div>
+                <div class="rightsection">
+                    <h3>Writer/Web Developer/Server Management</h3>
+                    <p>Unofficial School Blog</p>
+                    <h4>Key Qualifications and Responsibilities</h4>
+                    <ul>
+                        <li>Developing and maintaining an unofficial online blog for my high school</li>
+                        <li>Writing entertaining content for the blog. This involved programming skills for interactively entertaining webpages, and image editing skills for content creation</li>
+                    </ul>
+                    <h4>Key Achievements</h4>
+                    <ul>
+                        <li>Nothing really. Might've prevented a couple mental breakdowns during COVID (probably not) but I'll never know</li>
+                    </ul>
+                </div>
+
+                <h2>Projects</h2>
+                <!-- <div class="left">Webpage version: <img style="height: 120px; width: 120px;" src=file:///C:/Users/john/Documents/qr.png></div> -->
+                <div class="rightsection">
+                    <h3>Hobby Projects</h3>
+                    <ul>
+                        <li>A fairy chess engine</li>
+                        <li>A few digital games with python/pygame</li>
+                        <li>Automatic renamer and pdf-compiler for documents taken with photo booth on MacOS during e-learning</li>
+                        <li>Imageboard crawler</li>
+                        <li>Decision tree based wordle solver</li>
+                        <li>Data denoising preprocessor and trend finder (for noisy sinusoidal data with exponentially decaying amplitude)</li>
+                        <li>Using/configuring Linux (NixOS) as a daily driver</li>
+                    </ul>
+                    <h3>Contributed To</h3>
+                    <ul>
+                        <li>Adding, updating NixOS packages</li>
+                        <li>Hyprprop: xprop for Hyprland</li>
+                        <li>Budgeting app for Hackathon</li>
+                        <li>GuessTheLocation: location guessing game</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <footer>
+            <p>This resume was programmed using HTML and CSS, then exported to PDF, it was inspired by the template at <a href="https://zety.com/blog/college-freshman-resume-example">https://zety.com/blog/college-freshman-resume-example</a>. Access the source code on my Github page.</p>
+        </footer>
+    </body>
+</html>
+
+<!-- https://zety.com/blog/college-freshman-resume-example -->
