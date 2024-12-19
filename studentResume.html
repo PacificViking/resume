@@ -98,7 +98,7 @@
                 border: 1.5px gray solid;
                 border-left: none;
                 border-right: none;
-                margin: 5px 0px 20px 0px;
+                margin: 5px 0px 5px 0px;
             }
             #right > h3 {
                 margin-right: 0 !important;
@@ -107,20 +107,28 @@
             }
             #right h3 {
                 margin: 5px 0px 5px 0px;
+                text-decoration: underline;
             }
+            #right .rightsection h3 {
+                margin-left: -20px;
+            } /* relate date with title for work history section */
             #right h4 {
-                margin: 15px 0px 5px 0px; 
+                margin: 10px 0px 2px 0px; 
+            }
+            #right h4:first-child {
+                margin-top: 2px;
             }
             .rightsection {
                 margin-right: 0;
                 margin-left: auto;
                 width: 86%;
-                margin-bottom: 25px;
+                margin-bottom: 5px;
             }
             .rightsection > p {
                 font-style: italic;
-                font-size: 18px;
-                margin-top: 10px;
+                font-size: 15px;
+                margin-top: 2px;
+                margin-bottom: 5px;
             }
             .left {
                 display: block;
@@ -133,7 +141,7 @@
                 list-style-position: outside;
             }
             .rightsection ul li {
-                line-height: 1.3;  /* it says 1.15 but it looks more like 1.3*/
+                line-height: 1.25;  /* it says 1.15 but it looks more like 1.3*/
             }
 
             footer {
@@ -173,7 +181,7 @@
 
                 <h2>Education</h2>
                 <ul class="sanitize">  <!--being put into a list for stylistic consistency-->
-                    <li>Pursuing <b>Bachelor's Degree: Computer Engineering</b>, University of Toronto (St George). Graduating 2027.</li>
+                    <li>Year 2, pursuing <b>Bachelor's Degree: Computer Engineering</b>, University of Toronto (St George). Graduating 2027.</li>
                 </ul>
                 
                 <h2>Skills</h2>
@@ -209,7 +217,7 @@
                 <ul>
                     <li>Certificate Cutoff: Canadian Computing Competition, Senior</li>
                     <li>Certificate Cutoff: Waterloo CEMC Euclid Competition</li>
-                    <li>Advent of Code 2021-2023</li>
+                    <li>Advent of Code 2021-2024</li>
                     <li>Hack the Valley 8</li>
                 </ul>
             </div>
@@ -259,6 +267,7 @@
                         <li>Using/configuring Linux (NixOS) as a daily driver</li>
                         <li>SMS receiver and web server for remote SIM card</li>
                         <li>HTTP chat server with file uploading and chatrooms</li>
+                        <li>Code for this resume template</li>
                     </ul>
                 </div>
                 <h3>Contributed To</h3>
@@ -272,7 +281,7 @@
                 </div>
 
 
-                <h2>Volunteer History</h2>
+                <h2>Work History</h2>
                 <div class="left">2020-11 - 2021-03; <br><br> 2021-11 - 2022-03</div>
                 <div class="rightsection">
                     <h3>Head of Sounds and Lights</h3>
@@ -302,6 +311,23 @@
                     <h4>Key Achievements</h4>
                     <ul>
                         <li>Blog had 200 views per week at its peak during COVID periods</li>
+                    </ul>
+                </div>
+
+                <div class="left">2024-06 - 2024-09</div>
+                <div class="rightsection">
+                    <h3>Software Developer</h3>
+                    <p>A5 Project: Developing a Python Interpreter in Rust</p>
+                    <h4>Key Qualifications and Responsibilities</h4>
+                    <ul>
+                        <li>Communicated effectively with already-established project group to find out areas of potential contribution</li>
+                        <li>Researched Python interpreter control flow using knowledge in the language, and finding correlations with code in Rust to understand available functions</li>
+                        <li>Wrote several interal object representation files and added to functionality of several others</li>
+                        <li>Wrote tests for my contributions as well as test cases for milestone</li>
+                    </ul>
+                    <h4>Key Achievements</h4>
+                    <ul>
+                        <li>Several previously unrunnable programs are able to run</li>
                     </ul>
                 </div>
 
